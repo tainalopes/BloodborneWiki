@@ -29,7 +29,7 @@ export default function Npcs() {
     return (
 
         <View>
-            <ImageBackground style={estilo.background}
+            <ImageBackground /* style={estilo.background} */
                 source={imagemDeFundo}>
 
                 <ScrollView style={estilo.body}>
@@ -37,71 +37,125 @@ export default function Npcs() {
                     <Text style={estilo.titulo}>LISTA DE NPC's DO JOGO BASE</Text>
                     <Text style={estilo.linha} />
 
-                    <Image style={estilo.imagens} source={adella} />
-                    <Text style={estilo.texto}>Adella | Freira da Igreja da Cura</Text>
+                    <View style={{ flex: 1, flexDirection: 'row', justifyContent: 'space-around' }}>
+                        <View>
+                            <Image style={estilo.imagens} source={adella} />
+                            <Text style={estilo.texto}>Adella | Freira da Igreja da Cura</Text>
+                        </View>
+                        <View>
+                            <Image style={estilo.imagens} source={alfredo} />
+                            <Text style={estilo.texto}>Alfredo</Text>
+                        </View>
+                    </View>
 
-                    <Image style={estilo.imagens} source={alfredo} />
-                    <Text style={estilo.texto}>Alfredo</Text>
+                    <View style={{ flex: 1, flexDirection: 'row', justifyContent: 'space-around' }}>
+                        <View>
+                            <Image style={estilo.imagens} source={annelise} />
+                            <Text style={estilo.texto}>Annalise | Rainha dos Vileblood</Text>
+                        </View>
+                        <View>
+                            <Image style={estilo.imagens} source={aranha} />
+                            <Text style={estilo.texto}>Remenda | a Aranha</Text>
+                        </View>
+                    </View>
 
-                    <Image style={estilo.imagens} source={annelise} />
-                    <Text style={estilo.texto}>Annalise | Rainha dos Vileblood</Text>
+                    <View style={{ flex: 1, flexDirection: 'row', justifyContent: 'space-around' }}>
+                        <View>
+                            <Image style={estilo.imagens} source={arianna} />
+                            <Text style={estilo.texto}>Arianna, Mulher da Noite</Text>
+                        </View>
+                        <View>
+                            <Image style={estilo.imagens} source={boneca} />
+                            <Text style={estilo.texto}>Boneca Simples</Text>
+                        </View>
+                    </View>
 
-                    <Image style={estilo.imagens} source={aranha} />
-                    <Text style={estilo.texto}>Remenda | a Aranha</Text>
+                    <View style={{ flex: 1, flexDirection: 'row', justifyContent: 'space-around' }}>
+                        <View>
+                            <Image style={estilo.imagens} source={djura} />
+                            <Text style={estilo.texto}>Djura | Caçador aposentado</Text>
+                        </View>
+                        <View>
+                            <Image style={estilo.imagens} source={gehrman} />
+                            <Text style={estilo.texto}>Gehrman | O Primeiro Caçador</Text>
+                        </View>
+                    </View>
 
-                    <Image style={estilo.imagens} source={arianna} />
-                    <Text style={estilo.texto}>Arianna, Mulher da Noite</Text>
+                    <View style={{ flex: 1, flexDirection: 'row', justifyContent: 'space-around' }}>
+                        <View>
+                            <Image style={estilo.imagens} source={homemCetico} />
+                            <Text style={estilo.texto}>Homem Cético</Text>
+                        </View>
+                        <View>
+                            <Image style={estilo.imagens} source={iosefka} />
+                            <Text style={estilo.texto}>Iosefka</Text>
+                        </View>
+                    </View>
 
-                    <Image style={estilo.imagens} source={boneca} />
-                    <Text style={estilo.texto}>Boneca Simples</Text>
+                    <View style={{ flex: 1, flexDirection: 'row', justifyContent: 'space-around' }}>
+                        <View>
+                            <Image style={estilo.imagens} source={jovem} />
+                            <Text style={estilo.texto}>Jovem e irmã mais velha</Text>
+                        </View>
+                        <View>
+                            <Image style={estilo.imagens} source={mendigo} />
+                            <Text style={estilo.texto}>Mendigo suspeito</Text>
+                        </View>
+                    </View>
 
-                    <Image style={estilo.imagens} source={djura} />
-                    <Text style={estilo.texto}>Djura | Caçador aposentado</Text>
+                    <View style={{ flex: 1, flexDirection: 'row', justifyContent: 'space-around' }}>
+                        <View>
+                            <Image style={estilo.imagens} source={ministroDoSangue} />
+                            <Text style={estilo.texto}>Ministro do Sangue</Text>
+                        </View>
+                        <View>
+                            <Image style={estilo.imagens} source={moradorCapela} />
+                            <Text style={estilo.texto}>Morador da Capela Oedon</Text>
+                        </View>
+                    </View>
 
-                    <Image style={estilo.imagens} source={gehrman} />
-                    <Text style={estilo.texto}>Gehrman | O Primeiro Caçador</Text>
+                    <View style={{ flex: 1, flexDirection: 'row', justifyContent: 'space-around' }}>
+                        <View>
+                            <Image style={estilo.imagens} source={reitor} />
+                            <Text style={estilo.texto}>Reitor Willem</Text>
+                        </View>
+                        <View>
+                            <Image style={estilo.imagens} source={valtr} />
+                            <Text style={estilo.texto}>Valtr</Text>
+                        </View>
+                    </View>
 
-                    <Image style={estilo.imagens} source={homemCetico} />
-                    <Text style={estilo.texto}>Homem Cético</Text>
-
-                    <Image style={estilo.imagens} source={iosefka} />
-                    <Text style={estilo.texto}>Iosefka</Text>
-
-                    <Image style={estilo.imagens} source={jovem} />
-                    <Text style={estilo.texto}>Jovem e irmã mais velha</Text>
-
-                    <Image style={estilo.imagens} source={mendigo} />
-                    <Text style={estilo.texto}>Mendigo suspeito</Text>
-
-                    <Image style={estilo.imagens} source={ministroDoSangue} />
-                    <Text style={estilo.texto}>Ministro do Sangue</Text>
-
-                    <Image style={estilo.imagens} source={moradorCapela} />
-                    <Text style={estilo.texto}>Morador da Capela Oedon</Text>
-
-                    <Image style={estilo.imagens} source={reitor} />
-                    <Text style={estilo.texto}>Reitor Willem</Text>
-
-                    <Image style={estilo.imagens} source={valtr} />
-                    <Text style={estilo.texto}>Valtr</Text>
-
-                    <Image style={estilo.imagens} source={velha} />
-                    <Text style={estilo.texto}>Velha Solitária</Text>
+                    <View style={{ flex: 1, flexDirection: 'row', justifyContent: 'space-around' }}>
+                        <View>
+                            <Image style={estilo.imagens} source={velha} />
+                            <Text style={estilo.texto}>Velha Solitária</Text>
+                        </View>
+                    </View>
 
                     <Text style={estilo.titulo}>LISTA DE NPC's DA DLC</Text>
                     <Text style={estilo.linha} />
 
-                    <Image style={estilo.imagens} source={adelina} />
-                    <Text style={estilo.texto}>Santa Adelina</Text>
+                    <View style={{ flex: 1, flexDirection: 'row', justifyContent: 'space-around' }}>
+                        <View>
+                            <Image style={estilo.imagens} source={adelina} />
+                            <Text style={estilo.texto}>Santa Adelina</Text>
+                        </View>
+                        <View>
+                            <Image style={estilo.imagens} source={brador} />
+                            <Text style={estilo.texto}>Brador</Text>
+                        </View>
+                    </View>
 
-                    <Image style={estilo.imagens} source={brador} />
-                    <Text style={estilo.texto}>Brador</Text>
-
-                    <Image style={estilo.imagens} source={simon} />
-                    <Text style={estilo.texto}>Simon | O Angustiado</Text>
-
-                    <Image style={estilo.imagens} source={yamamura} />
-                    <Text style={estilo.texto}>Yamimura | Velho Caçador</Text>
+                    <View style={{ flex: 1, flexDirection: 'row', justifyContent: 'space-around' }}>
+                        <View>
+                            <Image style={estilo.imagens} source={simon} />
+                            <Text style={estilo.texto}>Simon | O Angustiado</Text>
+                        </View>
+                        <View>
+                            <Image style={estilo.imagens} source={yamamura} />
+                            <Text style={estilo.texto}>Yamimura | Velho Caçador</Text>
+                        </View>
+                    </View>
 
                     <View>
 
@@ -118,13 +172,10 @@ export default function Npcs() {
                     </View>
                 </ScrollView>
 
-
-
             </ImageBackground>
         </View>
     )
 }
-
 
 const estilo = StyleSheet.create({
     background: {
@@ -148,13 +199,13 @@ const estilo = StyleSheet.create({
     texto: {
         color: '#E6E6E6',
         textAlign: 'justify',
-        marginBottom: 10
+        marginBottom: 10,
+        width: 100
     },
     linha: {
         borderTopColor: '#A60E00',
         borderTopWidth: 1,
-        marginTop: 15,
-        width: 300
+        marginTop: 15
     },
     imagens: {
         width: 100,

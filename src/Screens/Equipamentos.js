@@ -50,7 +50,7 @@ const estilo = StyleSheet.create({
         borderTopColor: '#A60E00',
         borderTopWidth: 1,
         marginTop: 15,
-        width: 300
+        width: 1000
     },
     botao: {
         backgroundColor: '#A60E00',
